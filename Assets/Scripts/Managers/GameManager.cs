@@ -4,18 +4,25 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    static bool[] levelsWon;
+    public static int totalNumLevels = 4;
+    public static bool[] openLevels;
+
+    public static int currentLevel;
 
     // Start is called before the first frame update
     void Start()
     {
-        //load game here
-    }
+        PlayerData data = SaveManager.loadData();
+        if(data != null)
+        {
+            openLevels = data.levels;
+        }
+        else
+        {
+            openLevels = new bool[totalNumLevels];
+            openLevels[0] = true;
+        }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public static void quitGame()
@@ -25,5 +32,6 @@ public class GameManager : MonoBehaviour
     public static void saveGame()
     {
         //ToDO handle save game here.
+        Debug.Log(currentLevel);
     }
 }

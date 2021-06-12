@@ -970,6 +970,7 @@ GameObject:
   - component: {fileID: 1273496618}
   - component: {fileID: 1273496617}
   - component: {fileID: 1273496620}
+  - component: {fileID: 1273496621}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -1047,6 +1048,18 @@ MonoBehaviour:
     scene: optionScreen
   - button: {fileID: 1146123662}
     scene: creditScene
+--- !u!114 &1273496621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273496616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc2bc86e6439fe44bab3566ed7d6551e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1513682459
 GameObject:
   m_ObjectHideFlags: 0

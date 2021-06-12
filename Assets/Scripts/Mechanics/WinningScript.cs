@@ -30,6 +30,7 @@ public class WinningScript : MonoBehaviour
             else if (triggered == numCharacters)
             {
                 objective.SetActive(false);
+                SceneHandler.levelWon();
             }
         }
     }

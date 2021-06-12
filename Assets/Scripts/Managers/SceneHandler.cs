@@ -14,8 +14,10 @@ public class SceneHandler //: MonoBehaviour
     public static void levelWon()
     {
         //ToDo
-        // set levels won in game manager
+        if (GameManager.currentLevel < GameManager.openLevels.Length-1)
+            GameManager.openLevels[GameManager.currentLevel+1] = true;
         //save game
+        SaveManager.saveData();
         SceneManager.LoadScene("YouWin");
     }
 }

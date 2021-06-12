@@ -6,5 +6,6 @@ public class OptionManager
 {
     public static float volume;
 
+
     //ToDo: add more variables here
 }
