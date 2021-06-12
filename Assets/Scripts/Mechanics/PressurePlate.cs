@@ -6,15 +6,23 @@ using UnityEngine;
 public class PressurePlate : MonoBehaviour
 {
     [SerializeField]
-    PressureDoor door;
+    List<PressureDoor> PressureDoor_list = new List<PressureDoor>();
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        door.toggleState();
+        foreach (PressureDoor door in PressureDoor_list)
+            {
+               
+                door.toggleState();
+            }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
+        foreach (PressureDoor door in PressureDoor_list)
+            {
+               
         door.toggleState();
+            }
     }
 }
