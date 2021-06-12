@@ -28,7 +28,7 @@ namespace IndieMarc.TopDown
         public UnityAction onDeath;
         public UnityAction onHit;
 
-        private Rigidbody2D rigid;
+        public Rigidbody2D rigid;
         private Animator animator;
         private AutoOrderLayer auto_order;
         private ContactFilter2D contact_filter;
@@ -39,8 +39,11 @@ namespace IndieMarc.TopDown
         private Vector2 move_input;
         private Vector2 lookat = Vector2.zero;
         private float side = 1f;
-        public bool disable_controls = false;
+        private bool disable_controls = false;
         private float hit_timer = 0f;
+
+        
+     
 
         private static Dictionary<int, PlayerCharacter> character_list = new Dictionary<int, PlayerCharacter>();
 
@@ -52,6 +55,7 @@ namespace IndieMarc.TopDown
             auto_order = GetComponent<AutoOrderLayer>();
             hp = max_hp;
         }
+    
 
         void OnDestroy()
         {
@@ -90,6 +94,7 @@ namespace IndieMarc.TopDown
             {
                 //Controls
                 PlayerControls controls = PlayerControls.Get(player_id);
+                //Debug.Log(controls+" C");
                 move_input = controls.GetMove();
                 
             }
@@ -221,5 +226,6 @@ namespace IndieMarc.TopDown
             character_list.Values.CopyTo(list, 0);
             return list;
         }
+
     }
 }
