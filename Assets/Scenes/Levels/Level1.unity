@@ -8582,7 +8582,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 358461326}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -69.3, y: -26.5, z: -5}
+  m_LocalPosition: {x: 0.27, y: -0.54, z: -0.61}
   m_LocalScale: {x: 2.5, y: 2.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4824269951953296}
@@ -8597,11 +8597,11 @@ Light:
   m_GameObject: {fileID: 358461326}
   m_Enabled: 1
   serializedVersion: 10
-  m_Type: 0
+  m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 5
-  m_Range: 10
+  m_Range: 1
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -16155,7 +16155,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &630445842
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -21861,7 +21861,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &839278489
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -22458,7 +22458,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &856882503
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -24333,8 +24333,8 @@ Transform:
   - {fileID: 2009752506}
   - {fileID: 963940845}
   - {fileID: 1571882023}
-  - {fileID: 703574144}
   - {fileID: 871685915}
+  - {fileID: 703574144}
   - {fileID: 390467915}
   m_Father: {fileID: 0}
   m_RootOrder: 13
@@ -30078,7 +30078,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &1135044727
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -31157,7 +31157,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &1179925603
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -33140,11 +33140,11 @@ Transform:
   - {fileID: 797405877}
   - {fileID: 774135171}
   - {fileID: 1312171484}
-  - {fileID: 1413246609}
   - {fileID: 77444969}
+  - {fileID: 1925362828}
   - {fileID: 450010538}
   - {fileID: 1449853207}
-  - {fileID: 1925362828}
+  - {fileID: 1413246609}
   - {fileID: 1234714005}
   m_Father: {fileID: 0}
   m_RootOrder: 12
@@ -36749,7 +36749,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &1372014932
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -42234,7 +42234,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &1596311192
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -42705,7 +42705,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &1601279486
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -51577,7 +51577,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 1
+  rigid: {fileID: 0}
 --- !u!70 &1931837102
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -57783,7 +57783,7 @@ MonoBehaviour:
   move_accel: 10
   move_deccel: 20
   move_max: 3
-  disable_controls: 0
+  rigid: {fileID: 0}
 --- !u!114 &114351676826390916
 MonoBehaviour:
   m_ObjectHideFlags: 0
