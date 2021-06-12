@@ -31,7 +31,7 @@ public class Interactable : MonoBehaviour
 void OnTriggerEnter2D(Collider2D other){
 
 
-     Debug.Log("entered changed");
+    Debug.Log("entered changed");
     if(other.gameObject.tag == "Player"){
         triggered= true;
         Vector2 pos = other.transform.position - offset;  
