@@ -437,13 +437,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1273496616}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b6863524d5b0bb14d8ce5791b86cedfe, type: 3}
+  m_Script: {fileID: 11500000, guid: 09b1c551fe72a824fb000c63ab2d7f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quitButton: {fileID: 0}
-  SceneChangers:
-  - button: {fileID: 0}
-    scene: Main Menu
+  waitTime: 5
+  scene: Main Menu
 --- !u!1 &1569337586
 GameObject:
   m_ObjectHideFlags: 0
