@@ -39,7 +39,7 @@ namespace IndieMarc.TopDown
         private Vector2 move_input;
         private Vector2 lookat = Vector2.zero;
         private float side = 1f;
-        private bool disable_controls = false;
+        public bool disable_controls = false;
         private float hit_timer = 0f;
 
         private static Dictionary<int, PlayerCharacter> character_list = new Dictionary<int, PlayerCharacter>();
