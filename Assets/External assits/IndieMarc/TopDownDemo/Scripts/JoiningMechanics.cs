@@ -5,7 +5,7 @@ using UnityEngine;
 public class JoiningMechanics : MonoBehaviour
 {
     public bool inProximity;
-        public GameObject lightCharachter;
+        GameObject lightCharachter;
 
         bool isMoving;
 
@@ -13,6 +13,7 @@ public class JoiningMechanics : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        lightCharachter = GameObject.FindGameObjectsWithTag("LightCharacter")[0];
         
     }
 

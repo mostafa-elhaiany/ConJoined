@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ingameUI
   - PauseMenu
+  - LightCharacter
+  - Interactable
   layers:
   - Default
   - TransparentFX
