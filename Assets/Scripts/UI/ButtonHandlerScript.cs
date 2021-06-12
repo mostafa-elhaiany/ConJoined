@@ -19,7 +19,8 @@ public class ButtonHandlerScript : MonoBehaviour
         {
             buttonScene.button.onClick.AddListener(delegate { buttonClicked(buttonScene.scene); });
         }
-        quitButton.onClick.AddListener(quitGame);
+        if(quitButton != null)
+            quitButton.onClick.AddListener(quitGame);
     }
     public void quitGame()
     {
