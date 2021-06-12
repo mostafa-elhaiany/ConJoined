@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ingameUI
   - PauseMenu
+  - Objective
   layers:
   - Default
   - TransparentFX
