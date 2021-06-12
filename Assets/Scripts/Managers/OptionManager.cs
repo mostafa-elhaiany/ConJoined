@@ -2,17 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class OptionManager : MonoBehaviour
+public class OptionManager
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public static float volume;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //ToDo: add more variables here
 }
