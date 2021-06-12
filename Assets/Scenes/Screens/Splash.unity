@@ -440,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 09b1c551fe72a824fb000c63ab2d7f34, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waitTime: 5
+  waitTime: 3
   scene: Main Menu
 --- !u!1 &1569337586
 GameObject:
