@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Screens/LevelChoice.unity
     guid: 04c52e4821afe53448e2927a148a3d80
   - enabled: 1
+    path: Assets/Scenes/Levels/Tutorial Level.unity
+    guid: a2796304f24673d44a2442959781dfc7
+  - enabled: 1
     path: Assets/Scenes/Screens/creditScene.unity
     guid: 6020fef2f97430a41ac0987941786e01
   m_configObjects: {}
