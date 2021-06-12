@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    static bool[] levelsWon;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        //load game here
     }
 
     // Update is called once per frame

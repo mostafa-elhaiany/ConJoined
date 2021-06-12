@@ -1,39 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class JoiningMechanics : MonoBehaviour
 {
     public bool inProximity;
         GameObject lightCharachter;
 
-        bool isMoving;
+    bool isMoving;
 
-        public bool joined; 
-    // Start is called before the first frame update
+    public bool joined;
+
+    GameObject text;
+
     void Start()
     {
         lightCharachter = GameObject.FindGameObjectsWithTag("LightCharacter")[0];
         
+        text = GameObject.FindGameObjectWithTag("ingameUI");
     }
-
-    // Update is called once per frame
     void Update()
     {
         if(Vector2.Distance(this.gameObject.transform.position, lightCharachter.transform.position)<2f){
                 inProximity=true;
-            }
-            else{
+        }
+        else{
+            inProximity=false;
+        }
+        if(inProximity && Input.GetKeyDown(KeyCode.Space)){
+            joined = !joined;
+        }
 
-                inProximity=false;
-            }
-
-
-            if(inProximity && Input.GetKeyDown(KeyCode.Space)){
-                    joined = !joined;
-            }
-
-            
-        
+        text.SetActive(inProximity && !joined);
     }
 }
