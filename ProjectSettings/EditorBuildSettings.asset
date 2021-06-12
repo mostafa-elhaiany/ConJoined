@@ -26,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Screens/creditScene.unity
     guid: 6020fef2f97430a41ac0987941786e01
-  - enabled: 1
-    path: Assets/Scenes/Screens/YouWin.unity
-    guid: 22832b063aed23a41a6639b763bcc973
   m_configObjects: {}

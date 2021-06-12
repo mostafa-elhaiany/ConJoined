@@ -9687,11 +9687,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 978294769181718429, guid: 1a37ed5cd463130418d5de40ce40d02b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.29
-      objectReference: {fileID: 0}
     - target: {fileID: 979682359867694408, guid: 1a37ed5cd463130418d5de40ce40d02b,
         type: 3}
       propertyPath: door
@@ -9701,27 +9696,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PressurePlate
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112342775934424443, guid: 1a37ed5cd463130418d5de40ce40d02b,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: f84c802390848d34887201fc1d69cadb,
-        type: 3}
-    - target: {fileID: 1112342775934424443, guid: 1a37ed5cd463130418d5de40ce40d02b,
-        type: 3}
-      propertyPath: m_Color.r
-      value: 0.4716981
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112342775934424443, guid: 1a37ed5cd463130418d5de40ce40d02b,
-        type: 3}
-      propertyPath: m_Color.g
-      value: 0.04182981
-      objectReference: {fileID: 0}
-    - target: {fileID: 1112342775934424443, guid: 1a37ed5cd463130418d5de40ce40d02b,
-        type: 3}
-      propertyPath: m_Color.b
-      value: 0.04182981
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a37ed5cd463130418d5de40ce40d02b, type: 3}
