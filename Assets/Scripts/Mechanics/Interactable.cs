@@ -9,7 +9,7 @@ public class Interactable : MonoBehaviour
     private Vector3 offset;
     bool triggered;
     
-    Canvas myCanvas;
+
     Camera Cam;
     public bool interacted;
 
@@ -20,12 +20,9 @@ public class Interactable : MonoBehaviour
 
         Cam = Camera.main;
 
-        myCanvas= GameObject.Find("Interactable").GetComponent<Canvas>();
-       
-        
         offset = new Vector3(0f,1f,0f);
 
-        interactableText = GameObject.Find("InteractionText").GetComponent<Text>();
+        interactableText = GameObject.FindGameObjectWithTag("InteractionText").GetComponent<Text>();
         
         
     }
@@ -35,24 +32,22 @@ void OnTriggerEnter2D(Collider2D other){
 
 
      Debug.Log("entered changed");
-        if(other.gameObject.tag == "Player"){
-            triggered= true;
-            Vector2 pos = other.transform.position - offset;  
-            // get the game object position
-            Vector2 viewportPoint = Camera.main.WorldToViewportPoint(pos);  //convert game object position to VievportPoint
-             RectTransform assign_text_1RT = interactableText.GetComponent<RectTransform>();
-            // set MIN and MAX Anchor values(positions) to the same position (ViewportPoint)
-            assign_text_1RT.anchorMin = viewportPoint;  
-            assign_text_1RT.anchorMax = viewportPoint; 
+    if(other.gameObject.tag == "Player"){
+        triggered= true;
+        Vector2 pos = other.transform.position - offset;  
+        // get the game object position
+        Vector2 viewportPoint = Camera.main.WorldToViewportPoint(pos);  //convert game object position to VievportPoint
+            RectTransform assign_text_1RT = interactableText.GetComponent<RectTransform>();
+        // set MIN and MAX Anchor values(positions) to the same position (ViewportPoint)
+        assign_text_1RT.anchorMin = viewportPoint;  
+        assign_text_1RT.anchorMax = viewportPoint; 
 
-            //changing alpha channel
-            Color zm = interactableText.color;
+        //changing alpha channel
+        Color zm = interactableText.color;
             
-            zm.a = 1.0f;
-            interactableText.color  = zm;
-            
-            
-        }
+        zm.a = 1.0f;
+        interactableText.color  = zm;
+    }
  }
 
   void OnTriggerExit2D(Collider2D other){

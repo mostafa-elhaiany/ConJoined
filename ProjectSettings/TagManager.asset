@@ -8,6 +8,8 @@ TagManager:
   - PauseMenu
   - LightCharacter
   - Interactable
+  - Objective
+  - InteractionText
   layers:
   - Default
   - TransparentFX
