@@ -6,9 +6,12 @@ using UnityEngine.AI;
 public class LightCharacterBehaviour : MonoBehaviour
 {
    
-    GameObject player; //the enemy's target
-       private Rigidbody2D rb;
-       float speed = 2f;
+    GameObject player;
+    private Rigidbody2D rb;
+
+    [SerializeField]
+    float speed;
+
     void Start()
     {
     

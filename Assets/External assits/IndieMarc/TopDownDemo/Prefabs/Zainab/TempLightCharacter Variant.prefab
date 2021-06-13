@@ -45,7 +45,7 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 15
   m_Range: 10
-  m_SpotAngle: 80
+  m_SpotAngle: 90
   m_InnerSpotAngle: 8
   m_CookieSize: 10
   m_Shadows:
@@ -99,6 +99,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6184824910102157132, guid: c1aa5cba6a308844f8b831b340de5bc0,
+        type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 8098471615842080290, guid: c1aa5cba6a308844f8b831b340de5bc0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -157,12 +162,17 @@ PrefabInstance:
     - target: {fileID: 8098471615842080292, guid: c1aa5cba6a308844f8b831b340de5bc0,
         type: 3}
       propertyPath: m_Name
-      value: TempLightCharacter
+      value: TempLightCharacter Variant
       objectReference: {fileID: 0}
     - target: {fileID: 8098471615842080292, guid: c1aa5cba6a308844f8b831b340de5bc0,
         type: 3}
       propertyPath: m_TagString
       value: LightCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 8098471615842080303, guid: c1aa5cba6a308844f8b831b340de5bc0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1aa5cba6a308844f8b831b340de5bc0, type: 3}
