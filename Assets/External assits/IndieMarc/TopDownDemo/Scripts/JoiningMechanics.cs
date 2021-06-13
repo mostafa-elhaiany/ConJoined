@@ -7,11 +7,15 @@ public class JoiningMechanics : MonoBehaviour
     public bool inProximity;
     GameObject lightCharachter;
 
+    AudioSource audioSrc;
+
+
     GameObject joiningText;
     public bool joined; 
     // Start is called before the first frame update
     void Start()
     {
+        audioSrc = gameObject.GetComponent<AudioSource>();
         lightCharachter = GameObject.FindGameObjectWithTag("LightCharacter");
         joiningText = GameObject.FindGameObjectWithTag("ingameUI");
     }
@@ -27,7 +31,11 @@ public class JoiningMechanics : MonoBehaviour
             inProximity=false;
         }
         if (inProximity && Input.GetKeyDown(KeyCode.Space)){
-                joined = !joined;
+            joined = !joined;
+            if(joined)
+            {
+                audioSrc.Play();
+            }
         }
         else if(!inProximity && joined && Input.GetKeyDown(KeyCode.Space))
         {
