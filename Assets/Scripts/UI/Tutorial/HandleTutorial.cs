@@ -25,6 +25,12 @@ public class HandleTutorial : MonoBehaviour
         eventIdx++;
     }
 
+    public void triggerTaskDone()
+    {
+        activated = false;
+        eventIdx++;
+    }
+
     void Update()
     {
         if (eventIdx >= events.Length)
