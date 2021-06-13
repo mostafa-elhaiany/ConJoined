@@ -27,8 +27,11 @@ public class HandleTutorial : MonoBehaviour
 
     public void triggerTaskDone()
     {
-        activated = false;
-        eventIdx++;
+        if(!events[eventIdx].timerBased)
+        {
+            activated = false;
+            eventIdx++;
+        }
     }
 
     void Update()

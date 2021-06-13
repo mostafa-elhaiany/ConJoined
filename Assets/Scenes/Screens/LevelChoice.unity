@@ -1377,8 +1377,6 @@ MonoBehaviour:
   SceneChangers:
   - button: {fileID: 1236965887}
     scene: Main Menu
-  - button: {fileID: 966783615}
-    scene: Tutorial Level
 --- !u!114 &1273496621
 MonoBehaviour:
   m_ObjectHideFlags: 0

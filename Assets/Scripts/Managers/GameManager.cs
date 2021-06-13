@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    public static int totalNumLevels = 4;
+    public static int totalNumLevels = 5;
     public static bool[] openLevels;
 
     public static int currentLevel;
