@@ -316,6 +316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inProximity: 0
+  MyMaterial: {fileID: 2100000, guid: 07553007ceddacc47bac6a131f3dc619, type: 2}
   joined: 0
 --- !u!82 &8332184943291273355
 AudioSource:
