@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OptionManager
 {
-    public static float volume;
+    public static float volume = 0.3f;
 
 
     //ToDo: add more variables here
