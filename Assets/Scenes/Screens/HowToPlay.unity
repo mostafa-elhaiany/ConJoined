@@ -312,13 +312,12 @@ MonoBehaviour:
 
     W,A,S,D to walk
 
-    E to interact
 
-    Space
-    to join with light character
+    Space to join with Fragment
 
 
-    Collect (something) and find the way out.'
+    Solve
+    the puzzles and find the way out.'
 --- !u!222 &409018121
 CanvasRenderer:
   m_ObjectHideFlags: 0
