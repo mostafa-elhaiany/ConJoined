@@ -20,6 +20,8 @@ public class LevelOpen : MonoBehaviour
     void buttonClicked()
     {
         GameManager.currentLevel = level;
+        string level_name = "Level " + level;
+        SceneHandler.changeScene(level_name);
     }
 
 }
