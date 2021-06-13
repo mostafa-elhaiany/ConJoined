@@ -23,13 +23,14 @@ namespace IndieMarc.TopDown
 
         void Update()
         {
+            if (mc.GetComponent<JoiningMechanism>().joined) { 
             //Anims
             animator.SetFloat("Speed", character.GetMove().magnitude);
             animator.SetInteger("Side", character.GetSideAnim());
             if (character_item != null)
                 animator.SetBool("Hold", character_item.GetHeldItem() != null);
         }
-
+}
     }
 
 }
