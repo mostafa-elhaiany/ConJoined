@@ -10173,6 +10173,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5444222280625650719, guid: c1a786dc8141a1e44b87f64bfe93dc2a,
+        type: 3}
+      propertyPath: m_TagString
+      value: InteractionText
+      objectReference: {fileID: 0}
     - target: {fileID: 5444222280980886395, guid: c1a786dc8141a1e44b87f64bfe93dc2a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10312,7 +10317,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0641191, y: -0.17877293}
