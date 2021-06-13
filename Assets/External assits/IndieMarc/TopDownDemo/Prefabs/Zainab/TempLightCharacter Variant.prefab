@@ -92,6 +92,18 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &9104514544743449578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4383378199230577410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777d9515ba2423e429c39180b5c91df7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5528008260533988646
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -169,6 +181,12 @@ PrefabInstance:
       propertyPath: m_TagString
       value: LightCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 8098471615842080293, guid: c1aa5cba6a308844f8b831b340de5bc0,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -5581793262499802678, guid: fb78794ae6aefc1489eb01ec8163b2bf,
+        type: 3}
     - target: {fileID: 8098471615842080303, guid: c1aa5cba6a308844f8b831b340de5bc0,
         type: 3}
       propertyPath: m_IsTrigger
@@ -176,6 +194,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c1aa5cba6a308844f8b831b340de5bc0, type: 3}
+--- !u!1 &4383378199230577410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8098471615842080292, guid: c1aa5cba6a308844f8b831b340de5bc0,
+    type: 3}
+  m_PrefabInstance: {fileID: 5528008260533988646}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &4383378199230577412 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8098471615842080290, guid: c1aa5cba6a308844f8b831b340de5bc0,
