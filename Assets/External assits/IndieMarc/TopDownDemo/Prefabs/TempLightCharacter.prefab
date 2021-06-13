@@ -10,15 +10,14 @@ GameObject:
   m_Component:
   - component: {fileID: 8098471615842080290}
   - component: {fileID: 8098471615842080293}
-  - component: {fileID: 8098471615842080291}
   - component: {fileID: 8098471615842080289}
   - component: {fileID: 8098471615842080288}
   - component: {fileID: 8098471615842080303}
   - component: {fileID: 8098471615842080302}
-  - component: {fileID: 8098471615842080300}
+  - component: {fileID: -6184824910102157132}
   m_Layer: 0
   m_Name: TempLightCharacter
-  m_TagString: Untagged
+  m_TagString: LightCharacter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88,24 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8098471615842080291
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8098471615842080292}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d33aa9e63655fdf4082e0bd36620c949, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player_id: 0
-  max_hp: 100
-  invulnerable: 0
-  move_accel: 1
-  move_deccel: 1
-  move_max: 1
 --- !u!50 &8098471615842080289
 Rigidbody2D:
   serializedVersion: 4
@@ -156,7 +137,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0641191, y: -0.17877293}
@@ -179,7 +160,7 @@ MonoBehaviour:
   sort_refresh_rate: 0.1
   auto_rotate: 1
   rotate_offset: 0
---- !u!114 &8098471615842080300
+--- !u!114 &-6184824910102157132
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -188,9 +169,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8098471615842080292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2964ffaa480c12a4b88fd1792a28d152, type: 3}
+  m_Script: {fileID: 11500000, guid: b8eb48df29289a64b884074ceff3508d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move_accel: 1
-  move_deccel: 1
-  move_max: 1
