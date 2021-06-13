@@ -8,7 +8,7 @@ public class WinningScript : MonoBehaviour
     int numCharacters;
 
 
-    int triggered=0;
+//    int triggered=0;
 
     GameObject objective;
 
@@ -20,23 +20,33 @@ public class WinningScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        triggered++;
+        //triggered++;
         if(collision.CompareTag("Player"))
         {
-            if (0 < triggered && triggered < numCharacters)
-            {
-                objective.SetActive(true);
-            }
-            else if (triggered == numCharacters)
+
+            if(collision.gameObject.GetComponent<JoiningMechanics>().joined)
             {
                 objective.SetActive(false);
                 SceneHandler.levelWon();
             }
+            else
+            {
+                objective.SetActive(true);
+            }
+            //if (0 < triggered && triggered < numCharacters)
+            //{
+            //    objective.SetActive(true);
+            //}
+            //else if (triggered == numCharacters)
+            //{
+            //    objective.SetActive(false);
+            //    SceneHandler.levelWon();
+            //}
         }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        triggered--;
+        //triggered--;
         objective.SetActive(false);
     }
 }
