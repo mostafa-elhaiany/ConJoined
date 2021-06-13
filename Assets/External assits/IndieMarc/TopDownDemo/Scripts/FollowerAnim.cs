@@ -23,7 +23,7 @@ namespace IndieMarc.TopDown
 
         void Update()
         {
-            if (mc.GetComponent<JoiningMechanism>().joined) { 
+            if (mc.GetComponent<JoiningMechanics>().joined) { 
             //Anims
             animator.SetFloat("Speed", character.GetMove().magnitude);
             animator.SetInteger("Side", character.GetSideAnim());
