@@ -10,7 +10,7 @@ public class Audio : MonoBehaviour
 
     void Update()
     {
-        float vol = OptionManager.volume * 100 - 80;
+        float vol = (OptionManager.volume * 100) - 50;
         mixer.SetFloat("Volume", vol);
     }
 }
