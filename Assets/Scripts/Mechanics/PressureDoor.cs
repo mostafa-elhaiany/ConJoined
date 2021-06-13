@@ -14,8 +14,23 @@ public class PressureDoor : MonoBehaviour
 
     Vector2 position;
 
+    bool played = false;
+
     [SerializeField]
     float moveValue = 0.1f;
+
+    AudioSource audioSrc;
+
+
+    private void Start()
+    {
+        audioSrc = GetComponent<AudioSource>();
+    }
+    IEnumerator resetSrc()
+    {
+        yield return new WaitForSeconds(1);
+        played = false;
+    }
 
     public void toggleState()
     {
@@ -30,6 +45,12 @@ public class PressureDoor : MonoBehaviour
             position = closedPosition.position;
 
         Vector2 curPosition = new Vector2(this.transform.position.x, this.transform.position.y);
+        if(this.transform.position.x != curPosition.x && this.transform.position.y != curPosition.y && !played)
+        {
+            played = true;
+            audioSrc.Play();
+            StartCoroutine("resetSrc");
+        }
         
         this.transform.position = Vector2.Lerp(curPosition, position, moveValue * Time.deltaTime);
 
